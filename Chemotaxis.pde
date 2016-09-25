@@ -60,16 +60,15 @@ Bacteria[] colony;
  {
    myX = (myX + (int)(Math.random()*9)-4);
    myY = myY + (int)(Math.random()*9)-4;
-   int direction = (int)(Math.random()*2);
-
-     
-   }
+   
+ }
    
    void mouse()
 {
   noFill();
   stroke(250, 250, 250);
   ellipse(mouseX, mouseY, 100, 100);
+  quad(mouseX+43, mouseY+20, 140+mouseX, mouseY+60, 130+mouseX, mouseY+85, mouseX+40, mouseY+30);
 }
    
  }
