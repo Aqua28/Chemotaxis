@@ -58,9 +58,11 @@ Bacteria[] colony;
  
  void move()
  {
-   myX = (myX + (int)(Math.random()*15)-7);
-   myY = myY + (int)(Math.random()*15)-7;
-   
+   if(frameCount % 3 ==0)
+   {
+   myX = (myX + (int)(Math.random()*21)-10);
+   myY = myY + (int)(Math.random()*21)-10;
+   }
  }
    
    void mouse()
