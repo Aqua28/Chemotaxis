@@ -5,7 +5,7 @@ Bacteria[] colony;
  {     
  	size(400, 400);
   
-  colony = new Bacteria[50];
+  colony = new Bacteria[80];
   for(int i = 0; i< colony.length; i++)
   {
     colony[i] = new Bacteria(200, 200);
@@ -58,8 +58,8 @@ Bacteria[] colony;
  
  void move()
  {
-   myX = (myX + (int)(Math.random()*9)-4);
-   myY = myY + (int)(Math.random()*9)-4;
+   myX = (myX + (int)(Math.random()*15)-7);
+   myY = myY + (int)(Math.random()*15)-7;
    
  }
    
